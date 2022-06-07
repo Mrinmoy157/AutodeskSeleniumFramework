@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="smokeTest"/>
+</run>
+</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.crm.Autodesk.contact.CreateContactTestNGTest"/>
+      <class name="com.crm.Autodesk.campaign.CreateCampaignWithProductsTestNgTest"/>
+      <class name="com.crm.Autodesk.products.CreateProductsTestNgTest"/>
+      <class name="com.crm.organization.CreateOrgTestNGTest"/>
+      <class name="com.crm.Autodesk.contact.CreateContactWithOrgTestNgTest"/>
+      <class name="com.crm.organization.SelectHealthCareTestNGTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
